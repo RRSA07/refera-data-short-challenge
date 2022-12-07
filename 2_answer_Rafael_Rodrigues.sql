@@ -1,10 +1,10 @@
 /*Para a segunda questão foi utilizado o recurso de CTE (common table expression)
   para resultados temporários de consulta uma forma mais eficiente, organizada e 
-  legivel de estruturar consultas aninhadas ao inves de usar sub selects. No primeiro
-  CTE foi utilizado a mesma lógica de consuta da primeira questão sendo para esse caso
-  os top 16 fimes. No segundo CTE utilizou-se a consulta do primeiro CTE para relacionar 
+  legível de estruturar consultas aninhadas. No primeiro CTE foi utilizado a mesma 
+  lógica de consuta da primeira questão sendo para esse caso os top 16 filmes. 
+  No segundo CTE utilizou-se a consulta do primeiro CTE para relacionar 
   o nome e o id dos atores da tabela actor e film_actor para os 16 filmes mais alugados e 
-  por ultimo uma consulta no resultado da segunda consulta temporária para trazer o nome
+  por último um select no resultado da segunda consulta temporária para trazer o nome
   completo do ator mais presente nesses filmes.*/
 with cte_count as (
 select 

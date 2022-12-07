@@ -1,8 +1,8 @@
 /*Para a terceira questão utilizou-se dois CTEs para realizar as consultas
   temporárias. No primeiro CTE identificamos a data do primeiro filme alugado
   para cada cliente, na segunda consulta colocou-se todas as datas para o 
-  primeiro dia do mês no intuito de realizar o agrupamento das informações
-  por ultimo utilizamos um select para agrupar e contar quantos clientes novos 
+  primeiro dia do mês no intuito de realizar o agrupamento das informações e
+  por último utilizou-se um select para agrupar e contar quantos clientes novos 
   a empresa teve em cada mês.*/
 with cte_min_date as (
 select distinct 
